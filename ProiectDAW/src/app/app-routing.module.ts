@@ -10,6 +10,7 @@ import { ContactComponent } from './pages/home/contact/contact.component';
 import { AboutComponent } from './pages/home/about/about.component';
 import { ProfileComponent } from './pages/home/profile/profile.component';
 import { CategoriesComponent } from './pages/home/categories/categories.component';
+import { AllProductsComponent } from './pages/home/allproducts/allproducts.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuard], data: { role: 'Admin' }},
   { path: 'categories', component: CategoriesComponent, canActivate: [AuthGuard]},
+  { path: 'allproducts', component: AllProductsComponent, canActivate: [AuthGuard]},
   { path: "**", redirectTo: "/" }
 ];
 

@@ -32,6 +32,7 @@ import { ContactComponent } from './pages/home/contact/contact.component';
 import { AboutComponent } from './pages/home/about/about.component';
 import { ProfileComponent } from './pages/home/profile/profile.component';
 import { CategoriesComponent } from './pages/home/categories/categories.component';
+import { AllProductsComponent } from './pages/home/allproducts/allproducts.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { CategoriesComponent } from './pages/home/categories/categories.componen
     AboutComponent,
     ProfileComponent,
     CategoriesComponent,
+    AllProductsComponent,
   ],
   imports: [
     BrowserModule,
