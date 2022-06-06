@@ -34,6 +34,7 @@ import { ProfileComponent } from './pages/home/profile/profile.component';
 import { CategoriesComponent } from './pages/home/categories/categories.component';
 import { AllProductsComponent } from './pages/home/allproducts/allproducts.component';
 import { UsersComponent } from './pages/home/users/users.component';
+import { OrdersComponent } from './pages/home/orders/orders.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { UsersComponent } from './pages/home/users/users.component';
     CategoriesComponent,
     AllProductsComponent,
     UsersComponent,
+    OrdersComponent,
   ],
   imports: [
     BrowserModule,

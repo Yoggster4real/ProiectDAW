@@ -12,6 +12,9 @@ import { ProfileComponent } from './pages/home/profile/profile.component';
 import { CategoriesComponent } from './pages/home/categories/categories.component';
 import { AllProductsComponent } from './pages/home/allproducts/allproducts.component';
 import { UsersComponent } from './pages/home/users/users.component';
+import { OrdersComponent } from './pages/home/orders/orders.component';
+
+
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
@@ -24,6 +27,7 @@ const routes: Routes = [
   { path: 'categories', component: CategoriesComponent, canActivate: [AuthGuard]},
   { path: 'allproducts', component: AllProductsComponent, canActivate: [AuthGuard]},
   { path: 'users', component: UsersComponent, canActivate: [AuthGuard]},
+  { path: 'orders', component: OrdersComponent, canActivate: [AuthGuard]},
   { path: "**", redirectTo: "/" }
 ];
 
