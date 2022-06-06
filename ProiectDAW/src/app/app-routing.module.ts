@@ -11,7 +11,7 @@ import { AboutComponent } from './pages/home/about/about.component';
 import { ProfileComponent } from './pages/home/profile/profile.component';
 import { CategoriesComponent } from './pages/home/categories/categories.component';
 import { AllProductsComponent } from './pages/home/allproducts/allproducts.component';
-
+import { UsersComponent } from './pages/home/users/users.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuard], data: { role: 'Admin' }},
   { path: 'categories', component: CategoriesComponent, canActivate: [AuthGuard]},
   { path: 'allproducts', component: AllProductsComponent, canActivate: [AuthGuard]},
+  { path: 'users', component: UsersComponent, canActivate: [AuthGuard]},
   { path: "**", redirectTo: "/" }
 ];
 

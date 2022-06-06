@@ -33,6 +33,7 @@ import { AboutComponent } from './pages/home/about/about.component';
 import { ProfileComponent } from './pages/home/profile/profile.component';
 import { CategoriesComponent } from './pages/home/categories/categories.component';
 import { AllProductsComponent } from './pages/home/allproducts/allproducts.component';
+import { UsersComponent } from './pages/home/users/users.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { AllProductsComponent } from './pages/home/allproducts/allproducts.compo
     ProfileComponent,
     CategoriesComponent,
     AllProductsComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
